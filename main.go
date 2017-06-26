@@ -13,6 +13,7 @@ func main() {
 	var enc string
 	flag.StringVar(&out, "out", "", "result file. defualt folder with inputfile + inputfilename + .xlsx")
 	flag.StringVar(&enc, "enc", "Cp866", "encoding. default Cp866")
+	flag.Parse()
 
 	inputPath := os.Args[1]
 	println("open file ", inputPath)
